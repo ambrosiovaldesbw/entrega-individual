@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AV MUSIC | Controlador físico</title>
+<style>
+:root{--bg:#11101a;--panel:#211a31;--violet:#b996ef;--yellow:#ffe16c;--muted:#c1b9cf}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:white;font:16px/1.65 system-ui,Arial,sans-serif}
+header{position:sticky;top:0;background:#181323f2;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:14px 5%;gap:15px;flex-wrap:wrap;border-bottom:1px solid #433952}
+header strong{color:var(--yellow);font-size:21px}nav{display:flex;gap:14px;flex-wrap:wrap}a{color:inherit}nav a{text-decoration:none;font-size:13px}
+main{max-width:1160px;margin:auto;padding:0 5%}section{padding:65px 0;border-bottom:1px solid #40334d}h1{font-size:clamp(46px,8vw,95px);line-height:1.03;margin:10px 0}h2{font-size:clamp(26px,4vw,43px);line-height:1.2}
+p{color:var(--muted)}.over{color:var(--yellow);text-transform:uppercase;letter-spacing:.17em;font-size:12px;font-weight:700}
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:25px;min-height:65vh}
+.hero h1 span{color:var(--violet)}.card{background:var(--panel);padding:22px;border-radius:17px;margin:14px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.four{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+figure{margin:0}img,video{width:100%;display:block;border-radius:12px;background:#332b40;object-fit:contain}
+video{max-height:520px}figcaption{color:var(--muted);font-size:13px;margin-top:9px}
+.media{min-height:210px}.hero .media{min-height:270px}
+.media-status{font-size:13px;color:var(--yellow);padding:12px 0;display:none}.media-missing .media-status{display:block}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:12px;border-bottom:1px solid #4d425b}th{color:var(--yellow)}
+.pill{display:inline-block;padding:5px 11px;border:1px solid #6a577f;border-radius:99px;font-size:12px;margin:4px}
+footer{padding:35px;text-align:center;color:var(--muted)}.small{font-size:13px}
+@media(max-width:750px){.hero,.grid{grid-template-columns:1fr}.four{grid-template-columns:1fr 1fr}section{padding:40px 0}}
+</style>
+</head>
+<body>
+<header><strong>♫ AV MUSIC</strong><nav><a href="#producto">Producto</a><a href="#lamina">Lámina</a><a href="#videos">Videos</a><a href="#diagramas">Diagramas</a><a href="#proceso">Proceso</a><a href="#circuito">Circuito</a></nav></header>
+<main>
+<section class="hero" id="producto"><div><div class="over">Diseño de Interfaces · UAI · 2026</div><h1>AV <span>MUSIC</span></h1><h2>Controlador musical físico</h2><p>Controlador fabricado mediante impresión 3D y electrónica soldada, con Arduino UNO R3, botón frontal y fader B103. Conectado por USB a un dashboard web para manejar la reproducción de archivos MP3.</p><div><span class="pill">Arduino UNO R3</span><span class="pill">Impresión 3D</span><span class="pill">Shield soldado</span><span class="pill">Interfaz web</span></div></div>
+<figure><img class="media" src="assets/producto-final.png" alt="Fotografía del controlador terminado"><div class="media-status">Falta publicar la fotografía producto-final.png</div></figure></section>
+<section id="lamina"><div class="over">01 · Presentación</div><h2>Lámina de producto</h2><p>Vista general del objeto, fabricación y funcionamiento.</p><figure class="card"><img class="media" src="assets/lamina-producto.png" alt="Lámina AV MUSIC"><div class="media-status">Falta publicar la lámina lamina-producto.png</div></figure></section>
+<section id="videos"><div class="over">02 · Demostración</div><h2>Videos</h2><div class="grid">
+<figure class="card"><h3>Funcionamiento real</h3><video controls playsinline preload="metadata" src="assets/video-funcionamiento.mp4"></video><div class="media-status">Falta publicar el video real de funcionamiento.</div><figcaption>Prueba física del botón, el fader y la interfaz web.</figcaption></figure>
+<figure class="card"><h3>Vista explotada animada</h3><video controls playsinline preload="metadata" src="assets/video-vista-explotada.mp4"></video><div class="media-status">Falta publicar el video de despiece.</div><figcaption>Animación conceptual del armado y los componentes.</figcaption></figure></div></section>
+<section id="diagramas"><div class="over">03 · Estructura y electrónica</div><h2>Vista explotada y diagrama de conexiones</h2><div class="grid">
+<figure class="card"><img class="media" src="assets/vista-explotada.png" alt="Vista explotada conceptual"><div class="media-status">Falta publicar la vista explotada.</div><figcaption>Despiece conceptual. La disposición exacta puede diferir del montaje real.</figcaption></figure>
+<figure class="card"><img class="media" src="assets/diagrama-conexiones.png" alt="Diagrama de conexiones"><div class="media-status">Falta publicar el esquema ilustrado.</div><figcaption>Esquema ilustrativo; comprobar el cableado definitivo contra el shield real.</figcaption></figure></div></section>
+<section id="proceso"><div class="over">04 · Registro de fabricación</div><h2>Proceso</h2><div class="four">
+<figure class="card"><img class="media" src="assets/proceso-carcasa.png" alt="Carcasa 3D"><div class="media-status">Falta imagen</div><figcaption>01. Fabricación de carcasa</figcaption></figure>
+<figure class="card"><img class="media" src="assets/proceso-montaje.png" alt="Botón montado"><div class="media-status">Falta imagen</div><figcaption>02. Montaje del pulsador</figcaption></figure>
+<figure class="card"><img class="media" src="assets/proceso-soldadura.png" alt="Soldadura en perfboard"><div class="media-status">Falta imagen</div><figcaption>03. Soldadura del shield</figcaption></figure>
+<figure class="card"><img class="media" src="assets/proceso-ensamble.png" alt="Arduino conectado"><div class="media-status">Falta imagen</div><figcaption>04. Ensamble interno</figcaption></figure>
+</div></section>
+<section id="circuito"><div class="over">05 · Funcionamiento</div><h2>Interacción y conexiones</h2>
+<div class="grid"><div class="card"><h3>Controles</h3><p>1 clic → Play / Pausa<br>2 clics → Siguiente canción<br>3 clics → Canción anterior<br>Fader B103 → Volumen 0–100 %</p></div>
+<div class="card"><h3>Arduino UNO R3</h3><table><tr><th>Señal</th><th>Pin</th></tr><tr><td>Cursor del B103</td><td>A0</td></tr><tr><td>Botón NO</td><td>D2</td></tr><tr><td>Extremo del B103</td><td>5V</td></tr><tr><td>GND del fader y botón COM</td><td>GND común</td></tr><tr><td>PC</td><td>USB serial</td></tr></table></div></div>
+<p class="small">Conexión por Web Serial a 115200 baudios desde Chrome o Edge; la aplicación reproductora es distinta de esta página de documentación.</p></section>
+</main><footer>AV MUSIC · Diseño de Interfaces · Universidad Adolfo Ibáñez · 2026</footer>
+<script>document.querySelectorAll('img').forEach(x=>x.addEventListener('error',()=>x.parentElement.classList.add('media-missing')));document.querySelectorAll('video').forEach(x=>x.addEventListener('error',()=>x.parentElement.classList.add('media-missing')));</script>
+</body></html>
